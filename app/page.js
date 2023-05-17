@@ -229,7 +229,7 @@ export default function Home() {
                   <div className="name">Río Escondido, CDMX</div>
                   <div className="link">
                     <Link href="#" className="link-content">
-                      <p>Ver Proyecto </p>
+                      <p>Ver Proyecto</p>
                       <svg
                         width="24"
                         height="24"
