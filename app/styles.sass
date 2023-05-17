@@ -53,6 +53,7 @@
         padding: 20px 0
    
 
+
 .header
     position: fixed
     top: 0
@@ -64,6 +65,12 @@
     text-align: center
     color: white
     min-height: 100vh
+    .scroll-mobile
+        display: none!important
+    
+    .scroll-desktop
+        padding-bottom: 25px
+        display: block
     .flex
         position: absolute
         height: 100%
@@ -78,6 +85,7 @@
             align-items: flex-end
             column-gap: 10px
             padding-top: 150px
+            padding-bottom: 100px
         h3
             padding-bottom: 10px
         .scroll
@@ -328,6 +336,24 @@
     .nav
         padding: 10px 20px
     
+    .header
+        .title
+           font-size: 10px
+        .scroll-desktop
+            display: none !important
+        .scroll-mobile
+            display: block!important
+            padding-bottom: 50px
+            .circle
+                border: 1px solid white
+                width: 80px
+                height: 80px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+
+
     .menu-hidden
         padding: 100px 20px
 
