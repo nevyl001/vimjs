@@ -474,6 +474,7 @@ export default function Home() {
       </div>
       {/* GALERIAS - EDITAR CADA UNA CON FOTOS CORRECTAS */}
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox1}
         close={() => setOpenLightbox1(false)}
         slides={[
@@ -483,6 +484,7 @@ export default function Home() {
         ]}
       />
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox2}
         close={() => setOpenLightbox2(false)}
         slides={[
@@ -492,6 +494,7 @@ export default function Home() {
         ]}
       />
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox3}
         close={() => setOpenLightbox3(false)}
         slides={[
