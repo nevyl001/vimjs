@@ -125,14 +125,19 @@ export default function Nosotros() {
         </div>
       </section>
       <section className="vim-img">
+        <Image
+          src="/img/vimnos.png"
+          width={3840}
+          height={1326}
+          alt="VIM"
+          className="vimImg"
+        />
+      </section>
+      <section className="logos">
         <div className="container">
-          <Image
-            src="/img/vim-img.png"
-            width={1497}
-            height={591}
-            alt="VIM"
-            className="vimImg"
-          />
+          <div className="logosImg">
+            <Image src="/logos/logs.png" width={2620} height={216} alt="VIM" />
+          </div>
         </div>
       </section>
       <footer className="footer">
