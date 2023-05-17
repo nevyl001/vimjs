@@ -221,14 +221,17 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <div className="proyecto">
-                <div
-                  className="image"
-                  style={{ backgroundImage: "url(/img/riosc.png)" }}
-                />
+                <Link href="/proyectos/2">
+                  <div
+                    className="image"
+                    style={{ backgroundImage: "url(/img/riosc.png)" }}
+                  />
+                </Link>
+
                 <div className="info">
                   <div className="name">Río Escondido, CDMX</div>
                   <div className="link">
-                    <Link href="#" className="link-content">
+                    <Link href="/proyectos/2" className="link-content">
                       <p>Ver Proyecto</p>
                       <svg
                         width="24"

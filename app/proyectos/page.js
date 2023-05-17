@@ -126,7 +126,7 @@ export default function Proyectos() {
                 <div className="info">
                   <div className="name">Río Escondido, CDMX</div>
                   <div className="link">
-                    <Link href="/#" className="link-content">
+                    <Link href="/proyectos/2" className="link-content">
                       <p>Ver Proyecto </p>
                       <svg
                         width="24"
