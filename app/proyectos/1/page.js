@@ -339,6 +339,7 @@ export default function Proyecto1() {
       </footer>
       {/* GALERIAS - EDITAR CADA UNA CON FOTOS CORRECTAS */}
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox1}
         close={() => setOpenLightbox1(false)}
         slides={[
@@ -348,6 +349,7 @@ export default function Proyecto1() {
         ]}
       />
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox2}
         close={() => setOpenLightbox2(false)}
         slides={[
@@ -357,6 +359,7 @@ export default function Proyecto1() {
         ]}
       />
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox3}
         close={() => setOpenLightbox3(false)}
         slides={[
@@ -366,6 +369,7 @@ export default function Proyecto1() {
         ]}
       />
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox4}
         close={() => setOpenLightbox4(false)}
         slides={[
