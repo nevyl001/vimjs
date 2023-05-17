@@ -51,34 +51,36 @@ export default function Home() {
         <div className="menu-hidden">
           <div className="container">
             <div className="links">
-              <Link
-                href="/"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/nosotros"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Nosotros
-              </Link>
-              <Link
-                href="/proyectos"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Proyectos
-              </Link>
-              <Link
-                href="/contacto"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Contacto
-              </Link>
+              <div className="containerBox">
+                <Link
+                  href="/"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/nosotros"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Nosotros
+                </Link>
+                <Link
+                  href="/proyectos"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Proyectos
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Contacto
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -139,7 +141,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, delay: 1 }}
         >
           <section className="info-1">
             <div className="left" />
@@ -157,30 +159,39 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 1 }}
             >
               <div className="proyecto">
                 <div
                   className="image"
                   style={{ backgroundImage: "url(/img/priv.png)" }}
                 />
-                <div className="info">
-                  <div className="name">Privee, CDMX</div>
-                  <div className="link">
-                    <Link href="/proyectos/1" className="link-content">
-                      <p>Ver Proyecto </p>
-                      <svg
-                        width="24"
-                        height="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                      >
-                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-                      </svg>
-                    </Link>
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 1, delay: 1 }}
+                >
+                  <div className="info">
+                    <div className="name">Privee, CDMX</div>
+
+                    <div className="link">
+                      <Link href="/proyectos/1" className="link-content">
+                        <p>Ver Proyecto </p>
+                        <svg
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        >
+                          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
             <motion.div
@@ -449,6 +460,7 @@ export default function Home() {
                   Nosotros
                 </Link>
                 <h3>Contactanos</h3>
+
                 <Link href="mailto:contacto@proyectosvim.com" className="link">
                   contacto@proyectosvim.com
                 </Link>
