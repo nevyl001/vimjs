@@ -44,34 +44,36 @@ export default function Nosotros() {
         <div className="menu-hidden">
           <div className="container">
             <div className="links">
-              <Link
-                href="/"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/nosotros"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Nosotros
-              </Link>
-              <Link
-                href="/proyectos"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Proyectos
-              </Link>
-              <Link
-                href="/contacto"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Contacto
-              </Link>
+              <div className="containerBox">
+                <Link
+                  href="/"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/nosotros"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Nosotros
+                </Link>
+                <Link
+                  href="/proyectos"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Proyectos
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Contacto
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -143,20 +145,23 @@ export default function Nosotros() {
       <footer className="footer">
         <div className="container">
           <div className="menu">
-            <h3>Menu</h3>
-            <Link href="/contacto" className="link">
-              Contacto
-            </Link>
-            <Link href="/proyectos" className="link">
-              Proyectos
-            </Link>
-            <Link href="/nosotros" className="link">
-              Nosotros
-            </Link>
-            <h3>Contactanos</h3>
-            <Link href="mailto:contacto@proyectosvim.com" className="link">
-              contacto@proyectosvim.com
-            </Link>
+            <div className="menu-box">
+              <h3>Menu</h3>
+              <Link href="/contacto" className="link">
+                Contacto
+              </Link>
+              <Link href="/proyectos" className="link">
+                Proyectos
+              </Link>
+              <Link href="/nosotros" className="link">
+                Nosotros
+              </Link>
+              <h3>Contactanos</h3>
+
+              <Link href="mailto:contacto@proyectosvim.com" className="link">
+                contacto@proyectosvim.com
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

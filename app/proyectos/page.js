@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Proyectos() {
   const [menuActive, setMenuActive] = useState(false);
@@ -44,132 +45,156 @@ export default function Proyectos() {
         <div className="menu-hidden">
           <div className="container">
             <div className="links">
-              <Link
-                href="/"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/nosotros"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Nosotros
-              </Link>
-              <Link
-                href="/proyectos"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Proyectos
-              </Link>
-              <Link
-                href="/contacto"
-                className="link"
-                onClick={() => setMenuActive(false)}
-              >
-                Contacto
-              </Link>
+              <div className="containerBox">
+                <Link
+                  href="/"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/nosotros"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Nosotros
+                </Link>
+                <Link
+                  href="/proyectos"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Proyectos
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Contacto
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       )}
       {/* CONTENIDO GENERAL */}
-      <section className="proyectos">
-        <div className="container">
-          <div className="proyecto">
-            <div
-              className="image"
-              style={{ backgroundImage: "url(/img/img-2.png)" }}
-            />
-            <div className="info">
-              <div className="name">Privee, CDMX</div>
-              <div className="link">
-                <Link href="/proyectos/1" className="link-content">
-                  <p>Ver Proyecto </p>
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    class="svelte-5c3h7t"
-                  >
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-                  </svg>
-                </Link>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75 }}
+      >
+        <section className="proyectos">
+          <div className="container">
+            <div className="proyecto">
+              <div
+                className="image"
+                style={{ backgroundImage: "url(/img/img-2.png)" }}
+              />
+              <div className="info">
+                <div className="name">Privee, CDMX</div>
+                <div className="link">
+                  <Link href="/proyectos/1" className="link-content">
+                    <p>Ver Proyecto </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      class="svelte-5c3h7t"
+                    >
+                      <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="proyecto">
-            <div
-              className="image"
-              style={{ backgroundImage: "url(/img/riosc.png)" }}
-            />
-            <div className="info">
-              <div className="name">Río Escondido, CDMX</div>
-              <div className="link">
-                <Link href="/#" className="link-content">
-                  <p>Ver Proyecto </p>
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    class="svelte-5c3h7t"
-                  >
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-                  </svg>
-                </Link>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.75, delay: 1 }}
+            >
+              <div className="proyecto">
+                <div
+                  className="image"
+                  style={{ backgroundImage: "url(/img/riosc.png)" }}
+                />
+                <div className="info">
+                  <div className="name">Río Escondido, CDMX</div>
+                  <div className="link">
+                    <Link href="/#" className="link-content">
+                      <p>Ver Proyecto </p>
+                      <svg
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        class="svelte-5c3h7t"
+                      >
+                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="proyecto">
-            <div
-              className="image"
-              style={{ backgroundImage: "url(/img/img-2.png)" }}
-            />
-            <div className="info">
-              <div className="name">Montage, Los Cabos</div>
-              <div className="link">
-                <Link href="/#" className="link-content">
-                  <p>Ver Proyecto </p>
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    class="svelte-5c3h7t"
-                  >
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-                  </svg>
-                </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 2.5 }}
+            >
+              <div className="proyecto">
+                <div
+                  className="image"
+                  style={{ backgroundImage: "url(/img/mont.png)" }}
+                />
+                <div className="info">
+                  <div className="name">Montage, Los Cabos</div>
+                  <div className="link">
+                    <Link href="/#" className="link-content">
+                      <p>Ver Proyecto </p>
+                      <svg
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        class="svelte-5c3h7t"
+                      >
+                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+      </motion.div>
+
       <footer className="footer">
         <div className="container">
           <div className="menu">
-            <h3>Menu</h3>
-            <Link href="/contacto" className="link">
-              Contacto
-            </Link>
-            <Link href="/proyectos" className="link">
-              Proyectos
-            </Link>
-            <Link href="/nosotros" className="link">
-              Nosotros
-            </Link>
-            <h3>Contactanos</h3>
-            <Link href="mailto:contacto@proyectosvim.com" className="link">
-              contacto@proyectosvim.com
-            </Link>
+            <div className="menu-box">
+              <h3>Menu</h3>
+              <Link href="/contacto" className="link">
+                Contacto
+              </Link>
+              <Link href="/proyectos" className="link">
+                Proyectos
+              </Link>
+              <Link href="/nosotros" className="link">
+                Nosotros
+              </Link>
+              <h3>Contactanos</h3>
+
+              <Link href="mailto:contacto@proyectosvim.com" className="link">
+                contacto@proyectosvim.com
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
