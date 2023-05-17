@@ -95,8 +95,8 @@ export default function Nosotros() {
             <h2>QUIENES SOMOS</h2>
             <p>
               Como parte de Grupo Vimar, Vim nace con la finalidad de atender
-              los proyectos arquitectónicos más exigentes y especializados del
-              país.
+              los proyectos arquitectonicos mas exigentes y especializados del
+              pais.
             </p>
             <p>
               Con el apoyo de Vitrocanceles y de la mano de los mejores

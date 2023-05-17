@@ -108,6 +108,7 @@ export default function Home() {
                 <h3>PROYECTOS UNICOS</h3>
               </div>
             </motion.div>
+            <div className="space" />
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
