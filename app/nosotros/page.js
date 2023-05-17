@@ -82,7 +82,7 @@ export default function Nosotros() {
       <section className="info-1">
         <div className="left" />
         <div className="right">
-          <h2>PROYECTOS UNICOS</h2>
+          <h2>PROYECTOS ÚNICOS</h2>
           <h3>
             Vim es una empresa dedicada al suministro e instalacion de vidrio,
             aluminio y PVC para el sector residencial en Mexico.

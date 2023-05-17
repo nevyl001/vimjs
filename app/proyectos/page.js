@@ -88,10 +88,12 @@ export default function Proyectos() {
         <section className="proyectos">
           <div className="container">
             <div className="proyecto">
-              <div
-                className="image"
-                style={{ backgroundImage: "url(/img/img-2.png)" }}
-              />
+              <Link href="/proyectos/1">
+                <div
+                  className="image"
+                  style={{ backgroundImage: "url(/img/img-2.png)" }}
+                />
+              </Link>
               <div className="info">
                 <div className="name">Privee, CDMX</div>
                 <div className="link">
