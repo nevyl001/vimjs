@@ -254,7 +254,7 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <h2>SERIES </h2>
-              <p>
+              <p className="series-p">
                 Entendiendo el mercado y el tipo de proyectos que VIM busca
                 atacar, proponemos líneas base de Cortizo y Cuprum, sin embargo
                 tenemos la capacidad de trabajar con cualquier extrusor nacional
@@ -437,20 +437,22 @@ export default function Home() {
         <footer className="footer">
           <div className="container">
             <div className="menu">
-              <h3>Menu</h3>
-              <Link href="/contacto" className="link">
-                Contacto
-              </Link>
-              <Link href="/proyectos" className="link">
-                Proyectos
-              </Link>
-              <Link href="/nosotros" className="link">
-                Nosotros
-              </Link>
-              <h3>Contactanos</h3>
-              <Link href="mailto:contacto@proyectosvim.com" className="link">
-                contacto@proyectosvim.com
-              </Link>
+              <div className="menu-box">
+                <h3>Menu</h3>
+                <Link href="/contacto" className="link">
+                  Contacto
+                </Link>
+                <Link href="/proyectos" className="link">
+                  Proyectos
+                </Link>
+                <Link href="/nosotros" className="link">
+                  Nosotros
+                </Link>
+                <h3>Contactanos</h3>
+                <Link href="mailto:contacto@proyectosvim.com" className="link">
+                  contacto@proyectosvim.com
+                </Link>
+              </div>
             </div>
           </div>
         </footer>
