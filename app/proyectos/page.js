@@ -82,7 +82,7 @@ export default function Proyectos() {
           <div className="proyecto">
             <div
               className="image"
-              style={{ backgroundImage: "url(/img/privee.png)" }}
+              style={{ backgroundImage: "url(/img/img-2.png)" }}
             />
             <div className="info">
               <div className="name">Privee, CDMX</div>
@@ -106,7 +106,7 @@ export default function Proyectos() {
           <div className="proyecto">
             <div
               className="image"
-              style={{ backgroundImage: "url(/img/rio.png)" }}
+              style={{ backgroundImage: "url(/img/riosc.png)" }}
             />
             <div className="info">
               <div className="name">Río Escondido, CDMX</div>

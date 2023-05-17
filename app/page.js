@@ -100,7 +100,7 @@ export default function Home() {
                 <Image
                   src="/img/logo-2.png"
                   width={100}
-                  height={50}
+                  height={80}
                   alt="VIM"
                 />
                 <h3>PROYECTOS UNICOS</h3>
@@ -162,7 +162,7 @@ export default function Home() {
               <div className="proyecto">
                 <div
                   className="image"
-                  style={{ backgroundImage: "url(/img/privee.png)" }}
+                  style={{ backgroundImage: "url(/img/priv.png)" }}
                 />
                 <div className="info">
                   <div className="name">Privee, CDMX</div>
@@ -192,12 +192,12 @@ export default function Home() {
               <div className="proyecto">
                 <div
                   className="image"
-                  style={{ backgroundImage: "url(/img/rio.png)" }}
+                  style={{ backgroundImage: "url(/img/riosc.png)" }}
                 />
                 <div className="info">
                   <div className="name">Río Escondido, CDMX</div>
                   <div className="link">
-                    <Link href="/proyectos/1" className="link-content">
+                    <Link href="#" className="link-content">
                       <p>Ver Proyecto </p>
                       <svg
                         width="24"
@@ -222,12 +222,12 @@ export default function Home() {
               <div className="proyecto">
                 <div
                   className="image"
-                  style={{ backgroundImage: "url(/img/montage.png)" }}
+                  style={{ backgroundImage: "url(/img/mont.png)" }}
                 />
                 <div className="info">
                   <div className="name">Montage, Los Cabos</div>
                   <div className="link">
-                    <Link href="/proyectos/1" className="link-content">
+                    <Link href="#" className="link-content">
                       <p>Ver Proyecto </p>
                       <svg
                         width="24"
@@ -365,17 +365,17 @@ export default function Home() {
                       <div className="images">
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/c70-1.png)" }}
+                          style={{ backgroundImage: "url(/img/c70-1.jpg)" }}
                           onClick={() => setOpenLightbox2(true)}
                         />
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/c70-2.png)" }}
+                          style={{ backgroundImage: "url(/img/c70-2.jpg)" }}
                           onClick={() => setOpenLightbox2(true)}
                         />
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/c70-3.png)" }}
+                          style={{ backgroundImage: "url(/img/c70-3.jpg)" }}
                           onClick={() => setOpenLightbox2(true)}
                         />
                       </div>
@@ -405,17 +405,17 @@ export default function Home() {
                       <div className="images">
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/cov1.png)" }}
+                          style={{ backgroundImage: "url(/img/cor1.jpg)" }}
                           onClick={() => setOpenLightbox3(true)}
                         />
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/cov2.png)" }}
+                          style={{ backgroundImage: "url(/img/cor2.jpg)" }}
                           onClick={() => setOpenLightbox3(true)}
                         />
                         <div
                           className="image"
-                          style={{ backgroundImage: "url(/img/cov3.png)" }}
+                          style={{ backgroundImage: "url(/img/cor3.jpg)" }}
                           onClick={() => setOpenLightbox3(true)}
                         />
                       </div>
@@ -469,18 +469,18 @@ export default function Home() {
         open={openLightbox2}
         close={() => setOpenLightbox2(false)}
         slides={[
-          { src: "/img/c70-1.png" },
-          { src: "/img/c70-2.png" },
-          { src: "/img/c70-3.png" },
+          { src: "/img/c70-1.jpg" },
+          { src: "/img/c70-2.jpg" },
+          { src: "/img/c70-3.jpg" },
         ]}
       />
       <Lightbox
         open={openLightbox3}
         close={() => setOpenLightbox3(false)}
         slides={[
-          { src: "/img/cov1.png" },
-          { src: "/img/cov2.png" },
-          { src: "/img/cov3.png" },
+          { src: "/img/cor1.jpg" },
+          { src: "/img/cor2.jpg" },
+          { src: "/img/cor3.jpg" },
         ]}
       />
     </main>

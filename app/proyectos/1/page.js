@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { motion } from "framer-motion";
 
 export default function Proyecto1() {
   const [menuActive, setMenuActive] = useState(false);
@@ -134,134 +135,175 @@ export default function Proyecto1() {
             internacional.
           </p>
           <div className="carousel">
-            <Carousel
-              autoPlay
-              infiniteLoop
-              interval={3000}
-              showIndicators={false}
-              showStatus={false}
-              showArrows={true}
-              stopOnHover={false}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
             >
-              <div className="carousel-box">
-                <div className="main-image">
-                  <Image
-                    src="/img/carousel-1.png"
-                    width={972}
-                    height={972}
-                    alt="carousel"
-                    className="carousel-image"
-                  />
-                </div>
-                <div className="info">
-                  <div className="images">
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/cv1.png)" }}
-                      onClick={() => setOpenLightbox1(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/img-1.png)" }}
-                      onClick={() => setOpenLightbox1(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/cv3.png)" }}
-                      onClick={() => setOpenLightbox1(true)}
+              <Carousel
+                autoPlay
+                infiniteLoop
+                interval={3000}
+                showIndicators={false}
+                showStatus={false}
+                showArrows={true}
+                stopOnHover={false}
+                axis="horizontal"
+                className="relative"
+                renderArrowPrev={(clickHandler) => (
+                  <div className="prev-arrow" onClick={clickHandler}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36px"
+                      height="36px"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </div>
+                )}
+                renderArrowNext={(clickHandler) => (
+                  <div className="next-arrow" onClick={clickHandler}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36px"
+                      height="36px"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                      />
+                    </svg>
+                  </div>
+                )}
+              >
+                <div className="carousel-box">
+                  <div className="main-image">
+                    <Image
+                      src="/img/carousel-1.png"
+                      width={972}
+                      height={972}
+                      alt="carousel"
+                      className="carousel-image"
                     />
                   </div>
-                  <div className="text">
-                    <h4>Cor Vision Plus</h4>
-                    <p>
-                      Acristalamiento maximo 54 mm.<br></br>
-                      Dimensiones maximas 4.00 x 4.00 m.<br></br>
-                      Peso maximo 700 kg<br></br>
-                      Ensambles a 90o<br></br>
-                      Apertura manual o motorizada
-                    </p>
+                  <div className="info">
+                    <div className="images">
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/cv1.png)" }}
+                        onClick={() => setOpenLightbox1(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/img-1.png)" }}
+                        onClick={() => setOpenLightbox1(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/cv3.png)" }}
+                        onClick={() => setOpenLightbox1(true)}
+                      />
+                    </div>
+                    <div className="text">
+                      <h4>Cor Vision Plus</h4>
+                      <p>
+                        Acristalamiento maximo 54 mm.<br></br>
+                        Dimensiones maximas 4.00 x 4.00 m.<br></br>
+                        Peso maximo 700 kg<br></br>
+                        Ensambles a 90o<br></br>
+                        Apertura manual o motorizada
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="carousel-box">
-                <div className="main-image">
-                  <Image
-                    src="/img/carousel-2.png"
-                    width={972}
-                    height={972}
-                    alt="carousel"
-                    className="carousel-image"
-                  />
-                </div>
-                <div className="info">
-                  <div className="images">
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/c70-1.png)" }}
-                      onClick={() => setOpenLightbox2(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/c70-2.png)" }}
-                      onClick={() => setOpenLightbox2(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/c70-3.png)" }}
-                      onClick={() => setOpenLightbox2(true)}
+                <div className="carousel-box">
+                  <div className="main-image">
+                    <Image
+                      src="/img/carousel-2.png"
+                      width={972}
+                      height={972}
+                      alt="carousel"
+                      className="carousel-image"
                     />
                   </div>
-                  <div className="text">
-                    <h4>Core 70 Industrial</h4>
-                    <p>
-                      Acristalamiento maximo 55 mm.<br></br>
-                      Dimensiones maximas 1.50 x 2.60 m.<br></br>
-                      Peso maximo 160 kg<br></br>
-                      Ensambles a 90o<br></br>
-                      Apertura manual o motorizada
-                    </p>
+                  <div className="info">
+                    <div className="images">
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/c70-1.jpg)" }}
+                        onClick={() => setOpenLightbox2(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/c70-2.jpg)" }}
+                        onClick={() => setOpenLightbox2(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/c70-3.jpg)" }}
+                        onClick={() => setOpenLightbox2(true)}
+                      />
+                    </div>
+                    <div className="text">
+                      <h4>Core 70 Industrial</h4>
+                      <p>
+                        Acristalamiento maximo 55 mm.<br></br>
+                        Dimensiones maximas 1.50 x 2.60 m.<br></br>
+                        Peso maximo 160 kg<br></br>
+                        Ensambles a 90o<br></br>
+                        Apertura manual o motorizada
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="carousel-box">
-                <div className="main-image">
-                  <Image
-                    src="/img/carousel-3.png"
-                    width={972}
-                    height={972}
-                    alt="carousel"
-                    className="carousel-image"
-                  />
-                </div>
-                <div className="info">
-                  <div className="images">
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/cov1.png)" }}
-                      onClick={() => setOpenLightbox3(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/cov2.png)" }}
-                      onClick={() => setOpenLightbox3(true)}
-                    />
-                    <div
-                      className="image"
-                      style={{ backgroundImage: "url(/img/cov3.png)" }}
-                      onClick={() => setOpenLightbox3(true)}
+                <div className="carousel-box">
+                  <div className="main-image">
+                    <Image
+                      src="/img/carousel-3.png"
+                      width={972}
+                      height={972}
+                      alt="carousel"
+                      className="carousel-image"
                     />
                   </div>
-                  <div className="text">
-                    <h4>Cor Vision</h4>
-                    <p>
-                      Acristalamiento maximo 54 mm.<br></br>Dimensiones maximas
-                      4.00 x 4.00 m.<br></br>Peso maximo 700 kg Ensambles a 90o
-                      <br></br>Apertura manual o motorizada
-                    </p>
+                  <div className="info">
+                    <div className="images">
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/cor1.jpg)" }}
+                        onClick={() => setOpenLightbox3(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/cor2.jpg)" }}
+                        onClick={() => setOpenLightbox3(true)}
+                      />
+                      <div
+                        className="image"
+                        style={{ backgroundImage: "url(/img/cor3.jpg)" }}
+                        onClick={() => setOpenLightbox3(true)}
+                      />
+                    </div>
+                    <div className="text">
+                      <h4>Cor Vision</h4>
+                      <p>
+                        Acristalamiento maximo 54 mm.<br></br>Dimensiones
+                        maximas 4.00 x 4.00 m.<br></br>Peso maximo 700 kg
+                        Ensambles a 90o<br></br>Apertura manual o motorizada
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Carousel>
+              </Carousel>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -299,18 +341,18 @@ export default function Proyecto1() {
         open={openLightbox2}
         close={() => setOpenLightbox2(false)}
         slides={[
-          { src: "/img/c70-1.png" },
-          { src: "/img/c70-2.png" },
-          { src: "/img/c70-3.png" },
+          { src: "/img/c70-1.jpg" },
+          { src: "/img/c70-2.jpg" },
+          { src: "/img/c70-3.jpg" },
         ]}
       />
       <Lightbox
         open={openLightbox3}
         close={() => setOpenLightbox3(false)}
         slides={[
-          { src: "/img/cov1.png" },
-          { src: "/img/cov2.png" },
-          { src: "/img/cov3.png" },
+          { src: "/img/cor1.jpg" },
+          { src: "/img/cor2.jpg" },
+          { src: "/img/cor3.jpg" },
         ]}
       />
     </main>
