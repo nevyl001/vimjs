@@ -119,10 +119,12 @@ export default function Proyectos() {
               transition={{ duration: 0.75, delay: 1 }}
             >
               <div className="proyecto">
-                <div
-                  className="image"
-                  style={{ backgroundImage: "url(/img/riosc.png)" }}
-                />
+                <Link href="/proyectos/2">
+                  <div
+                    className="image"
+                    style={{ backgroundImage: "url(/img/riosc.png)" }}
+                  />
+                </Link>
                 <div className="info">
                   <div className="name">Río Escondido, CDMX</div>
                   <div className="link">
@@ -149,14 +151,16 @@ export default function Proyectos() {
               transition={{ duration: 1, delay: 2.5 }}
             >
               <div className="proyecto">
-                <div
-                  className="image"
-                  style={{ backgroundImage: "url(/img/mont.png)" }}
-                />
+                <Link href="/proyectos/3">
+                  <div
+                    className="image"
+                    style={{ backgroundImage: "url(/img/mont.png)" }}
+                  />
+                </Link>
                 <div className="info">
                   <div className="name">Montage, Los Cabos</div>
                   <div className="link">
-                    <Link href="/#" className="link-content">
+                    <Link href="/proyectos/3" className="link-content">
                       <p>Ver Proyecto </p>
                       <svg
                         width="24"
