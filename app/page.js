@@ -102,7 +102,7 @@ export default function Home() {
                 <Image
                   src="/img/logo-2.png"
                   width={100}
-                  height={80}
+                  height={70}
                   alt="VIM"
                 />
                 <h3>PROYECTOS UNICOS</h3>
@@ -162,10 +162,12 @@ export default function Home() {
               transition={{ duration: 1, delay: 1 }}
             >
               <div className="proyecto">
-                <div
-                  className="image"
-                  style={{ backgroundImage: "url(/img/priv.png)" }}
-                />
+                <Link href="/proyectos/1">
+                  <div
+                    className="image"
+                    style={{ backgroundImage: "url(/img/priv.png)" }}
+                  />
+                </Link>
                 <motion.div
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
