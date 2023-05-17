@@ -254,14 +254,16 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <div className="proyecto">
-                <div
-                  className="image"
-                  style={{ backgroundImage: "url(/img/mont.png)" }}
-                />
+                <Link href="/proyectos/3">
+                  <div
+                    className="image"
+                    style={{ backgroundImage: "url(/img/mont.png)" }}
+                  />
+                </Link>
                 <div className="info">
                   <div className="name">Montage, Los Cabos</div>
                   <div className="link">
-                    <Link href="#" className="link-content">
+                    <Link href="/proyectos/3" className="link-content">
                       <p>Ver Proyecto </p>
                       <svg
                         width="24"
