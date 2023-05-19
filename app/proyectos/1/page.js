@@ -235,8 +235,8 @@ export default function Proyecto1() {
                   <div className="main-image">
                     <Image
                       src="/img/carousel-2.png"
-                      width={972}
-                      height={972}
+                      width={928}
+                      height={1060}
                       alt="carousel"
                       className="carousel-image"
                     />
@@ -275,8 +275,8 @@ export default function Proyecto1() {
                   <div className="main-image">
                     <Image
                       src="/img/carousel-3.png"
-                      width={972}
-                      height={972}
+                      width={1018}
+                      height={1164}
                       alt="carousel"
                       className="carousel-image"
                     />
