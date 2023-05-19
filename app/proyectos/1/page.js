@@ -149,9 +149,9 @@ export default function Proyecto1() {
               transition={{ duration: 1 }}
             >
               <Carousel
-                autoPlay
+                // autoPlay
+                // interval={3000}
                 infiniteLoop
-                interval={3000}
                 showIndicators={false}
                 showStatus={false}
                 showArrows={true}
