@@ -109,7 +109,7 @@ export default function Nosotros() {
       <section className="info-3">
         <div className="left">
           <h2>PRODUCTOS</h2>
-          <p>Cancelería en Aluminio</p>
+          <p>Canceleria en Aluminio</p>
           <p>Domos</p>
           <p>Canceles de Baño</p>
           <p>Barandales</p>

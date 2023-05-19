@@ -150,29 +150,31 @@ export default function Proyectos() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 2.5 }}
             >
-              <div className="proyecto">
-                <Link href="/proyectos/3">
-                  <div
-                    className="image"
-                    style={{ backgroundImage: "url(/img/mont.png)" }}
-                  />
-                </Link>
-                <div className="info">
-                  <div className="name">Montage, Los Cabos</div>
-                  <div className="link">
-                    <Link href="/proyectos/3" className="link-content">
-                      <p>Ver Proyecto </p>
-                      <svg
-                        width="24"
-                        height="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        class="svelte-5c3h7t"
-                      >
-                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
-                      </svg>
-                    </Link>
+              <div className="pro3">
+                <div className="proyecto">
+                  <Link href="/proyectos/3">
+                    <div
+                      className="image"
+                      style={{ backgroundImage: "url(/img/mont.png)" }}
+                    />
+                  </Link>
+                  <div className="info">
+                    <div className="name">Montage, Los Cabos</div>
+                    <div className="link">
+                      <Link href="/proyectos/3" className="link-content">
+                        <p>Ver Proyecto </p>
+                        <svg
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          class="svelte-5c3h7t"
+                        >
+                          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"></path>
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,7 +183,7 @@ export default function Proyectos() {
         </section>
       </motion.div>
 
-      <footer className="footer">
+      <footer className="footer ">
         <div className="container">
           <div className="menu">
             <div className="menu-box">
