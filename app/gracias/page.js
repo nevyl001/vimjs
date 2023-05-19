@@ -99,7 +99,7 @@ export default function Contacto() {
             />
           </svg>
           <Link href="/" className="link">
-            <button>Enviar</button>
+            <button>Regresar</button>
           </Link>
         </div>
       </section>
