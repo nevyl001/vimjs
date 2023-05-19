@@ -130,3 +130,8 @@ a {
   max-width: 1200px !important;
   margin: auto;
 }
+
+h3,
+h2 {
+  font-family: Termina-ExtraLight;
+}

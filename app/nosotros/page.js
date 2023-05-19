@@ -93,16 +93,16 @@ export default function Nosotros() {
         <div className="container">
           <div className="flex">
             <h2>QUIENES SOMOS</h2>
-            <p>
+            <h3>
               Como parte de Grupo Vimar, Vim nace con la finalidad de atender
               los proyectos arquitectonicos mas exigentes y especializados del
               pais.
-            </p>
-            <p>
+            </h3>
+            <h3>
               Con el apoyo de Vitrocanceles y de la mano de los mejores
               proveedores en el mercado, logramos ofrecer a nuestros clientes un
               servicio integral de principio a fin.
-            </p>
+            </h3>
           </div>
         </div>
       </section>
