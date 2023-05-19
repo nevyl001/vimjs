@@ -112,7 +112,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.75, delay: 1 }}
+              transition={{ duration: 0.75, delay: 0.8 }}
             >
               <div className="scroll scroll-desktop">
                 <p>Scroll down para ver proyectos</p>
@@ -159,7 +159,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
         >
           <section className="info-1">
             <div className="left" />
@@ -191,7 +191,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1, delay: 1 }}
+                  transition={{ duration: 1, delay: 0.8 }}
                 >
                   <div className="info">
                     <div className="name">Privee, CDMX</div>
@@ -305,9 +305,9 @@ export default function Home() {
                 transition={{ duration: 1 }}
               >
                 <Carousel
-                  autoPlay
+                  // autoPlay
                   infiniteLoop
-                  interval={3000}
+                  // interval={3000}
                   showIndicators={false}
                   showStatus={false}
                   showArrows={true}
