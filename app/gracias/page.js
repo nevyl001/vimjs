@@ -2,33 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import React, { useRef } from "react";
-
-import emailjs from "@emailjs/browser";
 
 export default function Contacto() {
   const [menuActive, setMenuActive] = useState(false);
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_fk2ahes",
-        "template_lgbhw6f",
-        form.current,
-        "rj3HWwqCpdN_uOC8F"
-      )
-      .then(
-        (result) => {
-          window.location.replace("/gracias");
-        },
-        (error) => {
-          alert("error");
-        }
-      );
-  };
 
   return (
     <main>
@@ -48,7 +24,7 @@ export default function Contacto() {
               </Link>
             </div>
             <div className="right">
-              <div className="page-name">Contacto</div>
+              <div className="page-name">Gracias</div>
               {menuActive ? (
                 <div className="close" onClick={() => setMenuActive(false)}>
                   x
@@ -103,29 +79,28 @@ export default function Contacto() {
         </div>
       )}
       {/* CONTENIDO GENERAL */}
-      <section className="contacto">
+      <section className="gracias">
         <div className="container">
-          <h2>CONTACTO</h2>
-          <form ref={form} onSubmit={sendEmail}>
-            <input type="email" placeholder="Correo" name="user_email" />
-            <input type="text" placeholder="Mensaje" name="message" />
-            <div className="arrow">
-              <button>Enviar</button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-          </form>
+          <h2>Gracias</h2>
+          <p>Nos pondremos en contacto en aproximadamente 24 horas.</p>
+        </div>
+        <div className="arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+          <Link href="/" className="link">
+            <button>Enviar</button>
+          </Link>
         </div>
       </section>
       <footer className="footer">
