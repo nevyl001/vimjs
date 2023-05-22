@@ -20,6 +20,9 @@ export default function Proyecto1() {
   const [openLightbox3_1, setOpenLightbox3_1] = useState(false);
   const [openLightbox3_2, setOpenLightbox3_2] = useState(false);
   const [openLightbox4, setOpenLightbox4] = useState(false);
+  const [openLightbox4_1, setOpenLightbox4_1] = useState(false);
+  const [openLightbox4_2, setOpenLightbox4_2] = useState(false);
+  const [openLightbox4_3, setOpenLightbox4_3] = useState(false);
 
   return (
     <main>
@@ -118,12 +121,12 @@ export default function Proyecto1() {
             <div
               className="gallery-item"
               style={{ backgroundImage: "url(/img/m2.png)" }}
-              onClick={() => setOpenLightbox4(true)}
+              onClick={() => setOpenLightbox4_1(true)}
             />
             <div
               className="gallery-item"
               style={{ backgroundImage: "url(/img/m3.png)" }}
-              onClick={() => setOpenLightbox4(true)}
+              onClick={() => setOpenLightbox4_2(true)}
             />
           </div>
           <div className="gallery-large">
@@ -133,7 +136,7 @@ export default function Proyecto1() {
               height={500}
               alt="Main image"
               className="galleryLargeImg"
-              onClick={() => setOpenLightbox4(true)}
+              onClick={() => setOpenLightbox4_3(true)}
             />
           </div>
         </div>
@@ -444,6 +447,39 @@ export default function Proyecto1() {
           { src: "/img/m2.png" },
           { src: "/img/m3.png" },
           { src: "/img/m4.png" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox4_1}
+        close={() => setOpenLightbox4_1(false)}
+        slides={[
+          { src: "/img/m2.png" },
+          { src: "/img/m3.png" },
+          { src: "/img/m4.png" },
+          { src: "/img/m1.png" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox4_2}
+        close={() => setOpenLightbox4_2(false)}
+        slides={[
+          { src: "/img/m3.png" },
+          { src: "/img/m4.png" },
+          { src: "/img/m1.png" },
+          { src: "/img/m2.png" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox4_3}
+        close={() => setOpenLightbox4_3(false)}
+        slides={[
+          { src: "/img/m4.png" },
+          { src: "/img/m1.png" },
+          { src: "/img/m2.png" },
+          { src: "/img/m3.png" },
         ]}
       />
     </main>
