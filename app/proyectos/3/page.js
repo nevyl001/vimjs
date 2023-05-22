@@ -14,7 +14,11 @@ export default function Proyecto1() {
   const [openLightbox1_1, setOpenLightbox1_1] = useState(false);
   const [openLightbox1_2, setOpenLightbox1_2] = useState(false);
   const [openLightbox2, setOpenLightbox2] = useState(false);
+  const [openLightbox2_1, setOpenLightbox2_1] = useState(false);
+  const [openLightbox2_2, setOpenLightbox2_2] = useState(false);
   const [openLightbox3, setOpenLightbox3] = useState(false);
+  const [openLightbox3_1, setOpenLightbox3_1] = useState(false);
+  const [openLightbox3_2, setOpenLightbox3_2] = useState(false);
   const [openLightbox4, setOpenLightbox4] = useState(false);
 
   return (
@@ -253,12 +257,12 @@ export default function Proyecto1() {
                       <div
                         className="image"
                         style={{ backgroundImage: "url(/img/c70-2.jpg)" }}
-                        onClick={() => setOpenLightbox2(true)}
+                        onClick={() => setOpenLightbox2_1(true)}
                       />
                       <div
                         className="image"
                         style={{ backgroundImage: "url(/img/c70-3.jpg)" }}
-                        onClick={() => setOpenLightbox2(true)}
+                        onClick={() => setOpenLightbox2_2(true)}
                       />
                     </div>
                     <div className="text">
@@ -293,12 +297,12 @@ export default function Proyecto1() {
                       <div
                         className="image"
                         style={{ backgroundImage: "url(/img/cor2.jpg)" }}
-                        onClick={() => setOpenLightbox3(true)}
+                        onClick={() => setOpenLightbox3_1(true)}
                       />
                       <div
                         className="image"
                         style={{ backgroundImage: "url(/img/cor3.jpg)" }}
-                        onClick={() => setOpenLightbox3(true)}
+                        onClick={() => setOpenLightbox3_2(true)}
                       />
                     </div>
                     <div className="text">
@@ -380,6 +384,27 @@ export default function Proyecto1() {
           { src: "/img/c70-3.jpg" },
         ]}
       />
+
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox2_1}
+        close={() => setOpenLightbox2_1(false)}
+        slides={[
+          { src: "/img/c70-2.jpg" },
+          { src: "/img/c70-3.jpg" },
+          { src: "/img/c70-1.jpg" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox2_2}
+        close={() => setOpenLightbox2_2(false)}
+        slides={[
+          { src: "/img/c70-3.jpg" },
+          { src: "/img/c70-1.jpg" },
+          { src: "/img/c70-2.jpg" },
+        ]}
+      />
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox3}
@@ -388,6 +413,26 @@ export default function Proyecto1() {
           { src: "/img/cor1.jpg" },
           { src: "/img/cor2.jpg" },
           { src: "/img/cor3.jpg" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox3_1}
+        close={() => setOpenLightbox3_1(false)}
+        slides={[
+          { src: "/img/cor2.jpg" },
+          { src: "/img/cor3.jpg" },
+          { src: "/img/cor1.jpg" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox3_2}
+        close={() => setOpenLightbox3_2(false)}
+        slides={[
+          { src: "/img/cor3.jpg" },
+          { src: "/img/cor1.jpg" },
+          { src: "/img/cor2.jpg" },
         ]}
       />
       <Lightbox
