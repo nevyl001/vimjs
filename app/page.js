@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 export default function Home() {
   const [menuActive, setMenuActive] = useState(false);
   const [openLightbox1, setOpenLightbox1] = useState(false);
+  const [openLightbox1_1, setOpenLightbox1_1] = useState(false);
+  const [openLightbox1_2, setOpenLightbox1_2] = useState(false);
   const [openLightbox2, setOpenLightbox2] = useState(false);
   const [openLightbox3, setOpenLightbox3] = useState(false);
 
@@ -367,12 +369,12 @@ export default function Home() {
                         <div
                           className="image"
                           style={{ backgroundImage: "url(/img/img-1.png)" }}
-                          onClick={() => setOpenLightbox1(true)}
+                          onClick={() => setOpenLightbox1_1(true)}
                         />
                         <div
                           className="image"
                           style={{ backgroundImage: "url(/img/cv3.png)" }}
-                          onClick={() => setOpenLightbox1(true)}
+                          onClick={() => setOpenLightbox1_2(true)}
                         />
                       </div>
                       <div className="text">
@@ -501,10 +503,31 @@ export default function Home() {
         close={() => setOpenLightbox1(false)}
         slides={[
           { src: "/img/cv1.png" },
-          { src: "/img/img-2.png" },
+          { src: "/img/img-1.png" },
           { src: "/img/cv3.png" },
         ]}
       />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox1_1}
+        close={() => setOpenLightbox1_1(false)}
+        slides={[
+          { src: "/img/img-1.png" },
+          { src: "/img/cv3.png" },
+          { src: "/img/cv1.png" },
+        ]}
+      />
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
+        open={openLightbox1_2}
+        close={() => setOpenLightbox1_2(false)}
+        slides={[
+          { src: "/img/cv3.png" },
+          { src: "/img/cv1.png" },
+          { src: "/img/img-1.png" },
+        ]}
+      />
+
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(255,255,255, .8)" } }}
         open={openLightbox2}
