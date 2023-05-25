@@ -81,7 +81,7 @@ export default function Contacto() {
       {/* CONTENIDO GENERAL */}
       <section className="gracias">
         <div className="container">
-          <h2>Gracias</h2>
+          <h2>GRACIAS</h2>
           <p>Nos pondremos en contacto en aproximadamente 24 horas.</p>
         </div>
         <div className="arrow">

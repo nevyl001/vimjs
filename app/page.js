@@ -105,12 +105,7 @@ export default function Home() {
               transition={{ duration: 0.75, delay: 0.5 }}
             >
               <div className="title">
-                <Image
-                  src="/img/logo-2.png"
-                  width={100}
-                  height={70}
-                  alt="VIM"
-                />
+                <Image src="/img/logo-2.png" width={90} height={70} alt="VIM" />
                 <h3>PROYECTOS UNICOS</h3>
               </div>
             </motion.div>

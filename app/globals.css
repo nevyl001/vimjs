@@ -135,3 +135,24 @@ h3,
 h2 {
   font-family: Termina-ExtraLight;
 }
+
+.yarl__icon {
+  color: black;
+  height: var(--yarl__icon_size, 50px) !important;
+  width: var(--yarl__icon_size, 50px) !important;
+}
+.yarl__button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--yarl__button_background_color, transparent);
+  border: var(--yarl__button_border, 0);
+  color: var(--yarl__color_button, hsla(0, 0%, 100%, 0.8));
+  cursor: pointer;
+  filter: none !important;
+  line-height: 0;
+  margin: var(--yarl__button_margin, 0);
+  outline: none;
+  padding: var(--yarl__button_padding, 8px);
+}
