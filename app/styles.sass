@@ -64,7 +64,7 @@
         display: none!important
     
     .scroll-desktop
-        padding-bottom: 25px
+        padding-bottom: 75px
         display: block
     .flex
         position: absolute
@@ -76,6 +76,8 @@
         flex-direction: column
        
         .title
+            font-family: Termina-ExtraLight
+            font-size: 19px
             display: flex
             align-items: flex-end
             column-gap: 10px
@@ -86,8 +88,10 @@
         .scroll
             display: flex
             flex-direction: column
-         
-            
+
+
+
+        
 
 .content-master
     position: absolute
@@ -235,24 +239,26 @@
                     background-size: cover
                     cursor: pointer
             .text
+                font-family: Termina-ExtraLight
                 text-align: left
                 padding: 10px
                 h4
                     font-size: 24px
+                    font-family: Termina-ExtraLight
                     margin-bottom: 10px
         .prev-arrow
             position: absolute
             top: 30%
             width: 35px
             cursor: pointer
-            z-index: 999
+            z-index: 100
         .next-arrow
             position: absolute
             top: 30%
             right: 0
             width: 35px
             cursor: pointer
-            z-index: 999
+            z-index: 100
                 
 .footer
     font-family: Termina, Ligh
@@ -373,6 +379,7 @@
                 border-radius: 50%
 
     .menu-hidden
+        z-index: 1000
         padding: 100px 20px
 
     .info-1 
