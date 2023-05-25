@@ -295,7 +295,7 @@ export default function Home() {
                 Entendiendo el mercado y el tipo de proyectos que VIM busca
                 atacar, proponemos líneas base de Cortizo y Cuprum, sin embargo
                 tenemos la capacidad de trabajar con cualquier extrusor nacional
-                e internacional. ASD
+                e internacional.
               </p>
             </motion.div>
             <div className="carousel">
